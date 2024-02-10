@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:theme="@style/Theme.MaterialComponents">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="W"
+        android:textColor="@color/blue"
+        android:background="@drawable/navigation_header_icon"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:textSize="28dp"
+        android:paddingStart="6dp"
+        android:paddingTop="2dp"
+        android:fontFamily="@font/primary_regular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navigation_title1"
+        android:textSize="24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/navigation_title2"
+        android:textSize="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

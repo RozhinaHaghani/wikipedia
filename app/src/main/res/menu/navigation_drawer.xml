@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_writer"
+        android:icon="@drawable/navigation_writer_icon_24"
+        android:title="@string/navigation_writer" />
+
+    <item
+        android:id="@+id/item_photographer"
+        android:icon="@drawable/navigation_photographer_icon_24"
+        android:title="@string/navigation_photographer" />
+
+    <item
+        android:id="@+id/item_movieMaker"
+        android:icon="@drawable/navigation_movie_maker_24"
+        android:title="@string/navigation_movie_maker" />
+    <item
+        android:id="@+id/item_translator"
+        android:icon="@drawable/navigation_translate_icon_24"
+        android:title="@string/navigation_translator" />
+
+    <item android:title="@string/navigation_text_website">
+        <menu>
+            <item
+                android:id="@+id/item_wikipedic"
+                android:icon="@drawable/navigation_wikipedic_24"
+                android:title="@string/navigation_website_wikipedic" />
+            <item
+                android:id="@+id/item_wikipedio"
+                android:icon="@drawable/navigation_wikipedio_24"
+                android:title="@string/navigation_website_wikinedio" />
+
+
+        </menu>
+
+
+    </item>
+
+
+</menu>
+
+
+

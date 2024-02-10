@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Wikipedia</string>
+    <string name="navigation_title1">what is wikipedia?</string>
+    <string name="navigation_title2">a free online encyclopedia</string>
+    <string name="navigation_writer">be a writer</string>
+    <string name="navigation_photographer">be a photographer</string>
+    <string name="navigation_movie_maker">be a movie maker</string>
+    <string name="navigation_translator">be a translator</string>
+    <string name="navigation_text_website">our websites</string>
+    <string name="navigation_website_wikipedic">visit wikipedic</string>
+    <string name="navigation_website_wikinedio">visit wikinedio </string>
+    <string name="navigation_open_drawer">open drawer</string>
+    <string name="navigation_close_drawer">close drawer</string>
+
+
 </resources>
