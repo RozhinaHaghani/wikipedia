@@ -11,6 +11,9 @@
     <string name="navigation_website_wikinedio">visit wikinedio </string>
     <string name="navigation_open_drawer">open drawer</string>
     <string name="navigation_close_drawer">close drawer</string>
+    <string name="navigationButton_profile">Profile</string>
+    <string name="navigationButton_trend">Trend</string>
+    <string name="navigationButton_explore">Explore</string>
 
 
 </resources>

@@ -5,7 +5,12 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import com.example.wikipedia.databinding.ActivityMainBinding
+import com.example.wikipedia.fragments.FragmentExplore
+import com.example.wikipedia.fragments.FragmentProfile
+import com.example.wikipedia.fragments.FragmentTrend
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -66,6 +71,56 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        addFirstFragment(FragmentExplore())
 
+        binding.buttomNavigationMain.setOnItemSelectedListener {
+
+            when(it.itemId){
+
+                R.id.explore_item ->{
+
+                    replaceFragment(FragmentExplore())
+
+
+
+                }
+                R.id.trend_item ->{
+
+                    replaceFragment(FragmentTrend())
+
+
+                }
+                R.id.profile_item ->{
+
+                    replaceFragment(FragmentProfile())
+
+
+                }
+
+            }
+
+
+
+            true
+        }
+
+        binding.buttomNavigationMain.setOnItemReselectedListener(){}      //hamintor khali sedash mizanim
+                                                                          //ye mozoee ke dar buttom navigation ha hast ine ke vaghti ro ye itemesh click
+                                                                          //mishe va ye fragment baz mishe, agar dobare ro hamun f click she dobare az
+                                                                          //aval load mikone chiz mizaye dakhele f ro..baraye inke in etefagh nayofte
+                                                                          //in tabe setonitemreselected ro sedash mizanim va migim vaghti call shod
+                                                                          //yani vaghti itemi reselect shod hich kari nakon(load nakon dobare)
+    }
+
+    private fun replaceFragment(fragment :Fragment){
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace( R.id.frame_main_container , fragment )
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+    private fun addFirstFragment(fragment: Fragment){
+        replaceFragment(FragmentTrend())
+        binding.buttomNavigationMain.selectedItemId = R.id.trend_item
     }
 }

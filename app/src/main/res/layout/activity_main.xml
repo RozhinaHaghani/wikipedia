@@ -29,6 +29,29 @@
         </com.google.android.material.appbar.AppBarLayout>
 
 
+        <FrameLayout
+            android:id="@+id/frame_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/buttomNavigationMain"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:menu="@menu/menu_buttom_navigation"
+            android:layout_gravity="bottom"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -36,7 +59,8 @@
         android:layout_gravity="start"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:menu="@menu/navigation_drawer"
+        app:menu="@menu/menu_navigation_drawer"
         app:headerLayout="@layout/navigation_header"
         />
+
 </androidx.drawerlayout.widget.DrawerLayout>
