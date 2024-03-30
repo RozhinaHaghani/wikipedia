@@ -14,6 +14,26 @@
     <string name="navigationButton_profile">Profile</string>
     <string name="navigationButton_trend">Trend</string>
     <string name="navigationButton_explore">Explore</string>
+    <string name="card_view_title">The Empire State Building</string>
+    <string name="card_view_secondary">The Empire State Building is a 102-story[c] Art Deco skyscraper in the Midtown South neighborhood of Manhattan in New York City. The building was designed by Shreve,
+        Lamb Harmon and built from 1930 to 1931. Its name is derived from "Empire State",
+        the nickname of the state of New York. The building has a roof height of 1,250 feet
+        (380 m) and stands a total of 1,454 feet (443.2 m) tall, including its antenna.
+        The Empire State Building was the worlds tallest building until the first tower
+        of the World Trade Center was topped out in 1970; following the September 11
+        attacks in 2001, the Empire State Building was New York Cities tallest building
+        until it was surpassed in 2012 by One World Trade Center. As of 2022, the building
+        is the seventh-tallest building in New York City, the ninth-tallest completed skyscraper
+        in the United States, and the 54th-tallest in the world.
+        The site of the Empire State Building, on the west side of Fifth Avenue between West 33rd
+        and 34th Streets, was developed in 1893 as the Waldorf–Astoria Hotel. In 1929, Empire State Inc.
+        is the seventh-tallest building in New York City, the ninth-tallest completed skyscraper
+        in the United States, and the 54th-tallest in the world.
+        attacks in 2001, the Empire State Building was New York Cities tallest building
+        until it was surpassed in 2012 by One World Trade Center. As of 2022, the building
+        is the seventh-tallest building in New York City, the ninth-tallest completed skyscraper
+        War II, its owners did not make a profit until the early 1950s.</string>
+    <string name="title2">Skyscraper in New York,US</string>
 
 
 </resources>

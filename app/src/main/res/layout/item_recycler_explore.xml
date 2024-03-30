@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_fragment_explore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_item_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="221dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_card_view"
+                android:contentDescription="@string/card_view_title"/>
+
+            <TextView
+                android:id="@+id/title1_item_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_view_title"
+                android:textSize="22sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/primary_bold"
+                android:textColor="@color/black_light"/>
+
+            <TextView
+                android:id="@+id/title2_item_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="15sp"
+                android:text="@string/title2"/>
+
+            <View
+                android:id="@+id/separatorLine_item_recyclerView"
+                android:layout_width="76dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/mainContent_item_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:layout_margin="15dp"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:maxLines="8"
+                android:text="@string/card_view_secondary" />
+
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>

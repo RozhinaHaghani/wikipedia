@@ -3,5 +3,9 @@
     <color name="blue">#03A9F4</color>
     <color name="orange">#FF7043</color>
     <color name="black">#FF000000</color>
+    <color name="black_light">#535050</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray_light">#D3CDCD</color>
+    <color name="gray">#AFA9A9</color>
+    <color name="green">#2B7817</color>
 </resources>

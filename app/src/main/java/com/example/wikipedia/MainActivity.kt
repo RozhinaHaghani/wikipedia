@@ -23,19 +23,21 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(findViewById(R.id.toolbarMain))
 
-        val actionBarDrawerToggle = ActionBarDrawerToggle(this,
+        val actionBarDrawerToggle = ActionBarDrawerToggle(
+            this,
             binding.drawerLayoutMain,
             binding.toolbarMain,
             R.string.navigation_open_drawer,
-            R.string.navigation_close_drawer)
+            R.string.navigation_close_drawer
+        )
 
         binding.drawerLayoutMain.addDrawerListener(actionBarDrawerToggle)
 
         actionBarDrawerToggle.syncState()   //for that icon for opening the navigation drawer...its not a regular icon..it has animation on it.
-                                             //but we van set a regular icon with no animation too
+        //but we van set a regular icon with no animation too
         binding.navigationView.setNavigationItemSelectedListener {   //for accessing the menu's items.
 
-            when(it.itemId){
+            when (it.itemId) {
 
                 R.id.item_writer -> {
 
@@ -44,23 +46,23 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-                R.id.item_photographer ->{
+                R.id.item_photographer -> {
 
                 }
 
-                R.id.item_movieMaker->{
+                R.id.item_movieMaker -> {
 
                 }
 
-                R.id.item_translator->{
+                R.id.item_translator -> {
 
                 }
 
-                R.id.item_wikipedic->{
+                R.id.item_wikipedic -> {
 
                 }
 
-                R.id.item_wikipedio->{
+                R.id.item_wikipedio -> {
 
                 }
             }
@@ -73,27 +75,25 @@ class MainActivity : AppCompatActivity() {
 
         addFirstFragment(FragmentExplore())
 
-        binding.buttomNavigationMain.setOnItemSelectedListener {
+        binding.buttonNavigationMain.setOnItemSelectedListener {
 
-            when(it.itemId){
+            when (it.itemId) {
 
-                R.id.explore_item ->{
+                R.id.explore_item -> {
 
                     replaceFragment(FragmentExplore())
 
-
-
                 }
-                R.id.trend_item ->{
+
+                R.id.trend_item -> {
 
                     replaceFragment(FragmentTrend())
 
-
                 }
-                R.id.profile_item ->{
+
+                R.id.profile_item -> {
 
                     replaceFragment(FragmentProfile())
-
 
                 }
 
@@ -104,23 +104,24 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        binding.buttomNavigationMain.setOnItemReselectedListener(){}      //hamintor khali sedash mizanim
-                                                                          //ye mozoee ke dar buttom navigation ha hast ine ke vaghti ro ye itemesh click
-                                                                          //mishe va ye fragment baz mishe, agar dobare ro hamun f click she dobare az
-                                                                          //aval load mikone chiz mizaye dakhele f ro..baraye inke in etefagh nayofte
-                                                                          //in tabe setonitemreselected ro sedash mizanim va migim vaghti call shod
-                                                                          //yani vaghti itemi reselect shod hich kari nakon(load nakon dobare)
+        binding.buttonNavigationMain.setOnItemReselectedListener() {}      //hamintor khali sedash mizanim
+        //ye mozoee ke dar buttom navigation ha hast ine ke vaghti ro ye itemesh click
+        //mishe va ye fragment baz mishe, agar dobare ro hamun f click she dobare az
+        //aval load mikone chiz mizaye dakhele f ro..baraye inke in etefagh nayofte
+        //in tabe setonitemreselected ro sedash mizanim va migim vaghti call shod
+        //yani vaghti itemi reselect shod hich kari nakon(load nakon dobare)
     }
 
-    private fun replaceFragment(fragment :Fragment){
+    private fun replaceFragment(fragment: Fragment) {
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace( R.id.frame_main_container , fragment )
+        transaction.replace(R.id.frame_main_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
-    private fun addFirstFragment(fragment: Fragment){
-        replaceFragment(FragmentTrend())
-        binding.buttomNavigationMain.selectedItemId = R.id.trend_item
+
+    private fun addFirstFragment(fragment: Fragment) {
+        replaceFragment(FragmentExplore())
+        binding.buttonNavigationMain.selectedItemId = R.id.explore_item
     }
 }

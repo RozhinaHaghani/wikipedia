@@ -38,10 +38,10 @@
             />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/buttomNavigationMain"
+            android:id="@+id/buttonNavigationMain"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            app:menu="@menu/menu_buttom_navigation"
+            app:menu="@menu/menu_button_navigation"
             android:layout_gravity="bottom"
             />
 
