@@ -10,7 +10,8 @@
 - Toolbar
 - Navigation Drawer
 - Buttom Navigation
-- Material CardView  
+- Material CardView
+## SreenShot 
 
 
 ![fragment_explore](https://github.com/RozhinaHaghani/wikipedia/assets/87487000/9b2061e3-a464-4eda-9887-88ba3430708c)  fragment_explore   
