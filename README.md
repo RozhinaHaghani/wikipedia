@@ -5,6 +5,7 @@
 - Material Design components
 - Glide for image loading
 - Recyclerview
+- ViewBinding
 - NestedScrollingView
 - Toolbar
 - Navigation Drawer
