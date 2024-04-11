@@ -44,7 +44,6 @@ class ActivityDetail : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
         return true
-
-
+        
     }
 }

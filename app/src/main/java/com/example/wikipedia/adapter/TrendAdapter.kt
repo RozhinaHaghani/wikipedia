@@ -18,6 +18,7 @@ class TrendAdapter(private val data: ArrayList<ItemPost>): RecyclerView.Adapter<
             val glide = Glide
                 .with(itemView.context)
                 .load(itemPost.imageUrl)
+                .transform(RoundedCorners(20))
                 .into(binding.imgTrendRecyclerView)
 
             binding.txtTrendTitle.text = itemPost.txtTitle

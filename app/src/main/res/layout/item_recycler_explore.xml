@@ -19,8 +19,8 @@
 
             <ImageView
                 android:id="@+id/imageView_item_recyclerView"
-                android:layout_width="wrap_content"
-                android:layout_height="221dp"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_card_view"
                 android:contentDescription="@string/card_view_title"/>
